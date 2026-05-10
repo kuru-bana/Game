@@ -1,0 +1,145 @@
+<!doctype html>
+<html id="sadoodle">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
+  <title>Rise of the Half Moon</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    #game-wrapper {
+      position: relative;
+      width: 540px;
+      height: 960px;
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+    #hplogo {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+    }
+    #fpdoodle, #sadoodle, #sdoodles,
+    #fpdoodle center, #sadoodle center, #sdoodles center,
+    #fpdoodle body, #sadoodle body, #sdoodles body,
+    #fpdoodle #hplogo, #sadoodle #hplogo, #sdoodles #hplogo {
+      overflow: hidden;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .moonCta {
+      background: none;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      border: none;
+      cursor: pointer;
+      pointer-events: all;
+      object-fit: contain;
+      aspect-ratio: 500 / 200;
+    }
+    #moon-static {
+      opacity: 0;
+      animation: 0.2s ease-out 0.1s 1 forwards fadeIn;
+    }
+    #ddlDomRoot { height: 100%; width: 100%; }
+    #sadoodle .moonCta, #fpdoodle .moonCta { opacity: 0; }
+    #fpdoodle .moonCta { animation: none; }
+    #fpdoodle, #sadoodle { background: none; }
+    #ctaRoot {
+      background: none;
+      border: none;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+    #moon-cta-container { width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+<script>
+  window.google = {};
+  window.google.doodle = {};
+  window.google.doodle.l10n = {
+    "en": {
+      "ALL": {
+        "{{LOGO_ALT_TEXT_HTML}}": "Rise of the Half Moon",
+        "{{LOGO_ALT_TEXT_JS}}": "Rise of the Half Moon",
+        "{{LOGO_ALT_TEXT}}": "Rise of the Half Moon",
+        "{{LOGO_ANCHOR_TARGET}}": "/search?q=moon+phases",
+        "Automatically Replaced Alt Text HTML": "Rise of the Half Moon",
+        "Automatically Replaced Alt Text JS": "Rise of the Half Moon",
+        "Automatically Replaced Alt Text": "Rise of the Half Moon",
+        "Automatically Replaced Share Text  \u2013 Rise of the Half Moon \u2013 Google Doodle": "Rise of the Half Moon \u2013 Google Doodle",
+        "Automatically Replaced Share Text JS \u2013 Rise of the Half Moon \u2013 Google Doodle": "Rise of the Half Moon \u2013 Google Doodle",
+        "{{LANGUAGE_DIRECTION}}": "ltr",
+        "Automatically Replaced Language Direction": "ltr"
+      }
+    }
+  };
+</script>
+<div id="game-wrapper">
+  <div id="hplogo" tabindex="0" aria-label="Rise of the Half Moon" role="region" title="Rise of the Half Moon" dir="ltr">
+    <div id="ddlDomRoot">
+      <div id="ddlContentRoot" class="ddl-content-root" dir="ltr"></div>
+      <button id="ctaRoot" tabindex="0" aria-hidden="false" title="Rise of the Half Moon">
+        <div id="moon-cta-container">
+          <img class="moonCta" id="moon-static" src="/logos/2024/moon/moon_march-rc2/cta.png" width="500" height="200" alt="" tabindex="-1" aria-hidden="true" draggable="false"/>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.google = window.google || {};
+  google.doodle = google.doodle || {};
+  google.doodle.id = "376116085";
+  google.doodle.url = google.doodle.url || "/search?q=moon+phases";
+  google.doodle.alt = "Rise of the Half Moon";
+  google.doodle.share = "Rise of the Half Moon \u2013 Google Doodle";
+  google.doodle.shortlink = "//g.co/doodle/7cgvv9w";
+  google.doodle.facebook_link = "//g.co/doodle/2ye4p6k";
+  google.doodle.twitter_link = "//g.co/doodle/4ffdyav";
+  google.doodle.email_link = "//g.co/doodle/h6beqyy";
+  google.doodle.copy_link = "//g.co/doodle/2ufs3q8";
+  google.doodle.gallery = "//www.google.com/doodles/gallery";
+  google.doodle.large_image = "/logos/doodles/2025/rise-of-the-half-moon-march-6753651837110631.2-l.png";
+  google.doodle.hl = "en";
+  google.doodle.gl = "ALL";
+  google.doodle.doodle_args = {};
+
+  (function() {
+    var l = ["google", "doodle", "loaded"], m = window, n;
+    for (; l.length && (n = l.shift()); )
+      l.length ? m[n] && m[n] !== Object.prototype[n] ? m = m[n] : m = m[n] = {} : m[n] = true;
+  })();
+</script>
+
+<script src="/logos/2024/moon/moon_march-rc2/moon_march.js"></script>
+</body>
+</html>
